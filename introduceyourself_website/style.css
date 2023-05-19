@@ -1,0 +1,85 @@
+ * {
+        box-sizing: border-box;
+    }
+    body{
+      margin: 0;
+      background-color: #b39f91;
+    }
+
+/* style for the header */
+.header{
+  background-color: #fcba03;
+  padding: 20px;
+  text-align: center;
+}
+
+/*Style the top navigation*/
+.topnav {
+  overflow: hidden;
+  background-color: #0f0b08;
+  display: inline-block;
+  text-align: center;
+
+}
+/*style the topnav links*/
+.topnav a{
+  float: left;
+  display:block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+/*change color on movement with hover*/
+.topnav a:hover{
+  background-color: #f11215;
+  color: black;
+}
+
+/*left and right column*/
+.column.side{
+  float: left;
+  width: 30%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*Clear Floats after the columns*/
+.row:after{
+  content:"";
+  display:table;
+  clear:both;
+}
+
+/*Responsive layout for three columns*/
+@media screen and (max-width: 600px){
+  .column.side, .column.middle {
+    width:100%
+  }
+}
+
+/*style for the footer*/
+.footer{
+  color: #e3dad3;
+  background-color: #0f0b08;
+  padding: 10px;
+  text-align: center;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: 550px;
+  width: 50%
+}
+.nav ul {
+    display: inline-block;
+    list-style-type: none;
+     background-color: #0f0b08;
+}
+.table, th, td {
+  border:1px solid black;
+}
