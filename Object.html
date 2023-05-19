@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body{
+      size: 50px;
+      background : #FF6E33;
+      color:black;
+      }
+      h1{
+        color:black;
+      }
+      h2{
+        color: black;
+      }
+      .center{
+        line-height: 100px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <h1>Car</h1>
+  <h2 id="id"></h2>
+  <h2 id="id1"></h2>
+  <h2 id="id2"></h2>
+  <h2 id="id3"></h2>
+    </div>
+
+
+<script>
+ function Car(Brand,Model,Year,Price){
+    this.Brand = Brand;
+    this.Model = Model;
+    this.Year = Year;
+    this.Price = Price;
+  }
+  var d1 = new Car("Lexus","RX350","2019","$39,000.00");
+
+  document.getElementById('id').innerHTML = "Brand of the Car: " + d1.Brand;
+  document.getElementById('id1').innerHTML = "Model of the Car: "+ d1.Model;
+  document.getElementById('id2').innerHTML = "Year: "+d1.Year;
+  document.getElementById('id3').innerHTML = "Price: "+ d1.Price;
+</script>
+  </body>
+</html>

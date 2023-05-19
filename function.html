@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Functions page</title>
+    <style>
+      body{
+        background:33F0FF;
+      }
+      h1{
+        color: black;
+      }
+      .center {
+        line-height: 200px;
+        height: 200px;
+        border: 5px solid black;
+        text-align: center;;
+}
+.center h1 {
+  line-height: 2;
+  display: inline-block;
+  vertical-align: middle;
+}
+    </style>
+  </head>
+  <body>
+    <div class="center">
+<h1>Calculate 4 times 4 is </h1>
+<h1></h1>
+<h1 id = "demo"></h1>
+  </div>
+
+    <script>
+//create a function
+  function myFunction(a,b){
+    return a*b;
+  }
+
+  document.getElementById("demo").innerHTML=myFunction(4, 4);
+        </script>
+
+
+  </body>
+</html>
