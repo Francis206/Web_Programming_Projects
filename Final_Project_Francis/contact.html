@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+
+    <link  rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="cover.css" rel="stylesheet">
+</head>
+<style>
+ 
+.contact-us {
+   
+    color: #fff;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .contact-us .fields {
+    background-image: url(../Final4/media/Logo.jpg);
+    background-attachment: inherit;
+    background-repeat: round;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: auto;
+    margin: 0 auto;
+   
+  }
+  
+  .contact-us p {
+  
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .contact-us textarea {
+    width: 50%;
+    height: 107px;
+    margin: 0 auto;
+  }
+  
+  .contact-us input[type="text"],
+  .contact-us textarea {
+   background-color: rgb(68, 46, 46);
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+  }.header{
+              background-color: #b0171f;
+            
+            }
+  
+</style>
+    <!-- Custom styles for this template -->
+    <link href="headers.css" rel="stylesheet">
+  </head>
+  <body class="flex h-100 text-center align-items-center">
+
+
+<main>
+  
+<!-- Navigation bar Added by Ronald -->
+  <div class="container-fluid flex w-100 h-100 p-3 ">
+    <div class="header">
+    <header class="d-flex justify-content-center py-3">
+    
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="index.html" class="nav-link"  style="color: white;">Home</a></li>
+        <li class="nav-item"><a href="menu.html" class="nav-link"style="color: white;">Menu</a></li>
+        <li class="nav-item"><a href="careers.html" class="nav-link"style="color: white;">Career</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link"style="color: white;">About</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link active" aria-current="page"style="color: white;">Contact</a></li>
+       
+      </ul>
+    </header>
+  </div>
+  </div>
+  <!-- made by Mijhail Bootstrap source-->
+<section class="contact-us text-center" style="margin: 0 auto;">
+  <div class="fields" style="margin: 0 auto;">
+ 
+   
+      <div class="row" >
+        <div class="col-lg">
+        <h2>Contact Us</h2>
+        <p class="lead"> D'Licious </p>
+
+        <form action="" role="form" class="">
+
+        
+            <div class="form-group">
+              <input type="text" class="form-control input-lg" placeholder="User Name" />
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-control input-lg" placeholder="Email" />
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-control input-lg" placeholder="Phone Number" />
+            </div>
+          
+
+       
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Your Message"></textarea>
+              <div id="googleMap" style="width:50%;height:100px; margin: 0 auto; padding-top: 20%; margin-top: 2%;"></div>
+
+              <script>
+              function myMap() {
+              var mapProp= {
+                center:new google.maps.LatLng(40.76031, -111.88822),
+                zoom:10,
+              };
+              var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+              //putting markers on the map
+              var marker = new google.maps.Marker({position: new google.maps.LatLng(40.76031, -111.88822), map: map});
+          }
+  
+  
+  
+              </script>
+              
+              <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcTNTwxmsRPx6Prjt7mOGu2K1ubuOT2VY&callback=myMap"></script>
+            </div>
+            <button style=" margin: 0 auto;"type="button" class="btn btn-primary btn-lg ">Contact Us</button>
+          
+        </div>
+        </form>
+
+      </div>
+    
+
+    
+  </div>
+  <script src="script.js"></script>
+</section>
+     <!--Alex pagination and refereces 
+  Pager Bootstrap source https://getbootstrap.com/docs/4.0/components/pagination/-->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center ">
+      <li class="page-item">
+        <a class="page-link " href="about.html" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+      <li class="page-item "><a class="page-link " href="index.html">1</a></li>
+      <li class="page-item page_color"><a class="page-link " href="menu.html">2</a></li>
+      <li class="page-item page_color"><a class="page-link " href="careers.html">3</a></li>
+      <li class="page-item"><a class="page-link" href="about.html">4</a></li>
+      <li class="page-item"><a class="page-link" href="contact.html">5</a></li>
+      <li class="page-item">
+        <a class="page-link" href="index.html" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!--Script-->
+  <script src="script.js"></script>
+  <!--Alex adjustments to navigation bar and text-->
+  <div class="bottomNav">
+    <h1 class="m-5 copyright small text-center">
+      <div><br>Copyright 2022 © CS220 Fall Semester Alejandro Alonso, Francisco Agballog & Mihjail Britos </div>
+    </h1>
+
+  </div>
+</div>
+
+</body>
+</html>

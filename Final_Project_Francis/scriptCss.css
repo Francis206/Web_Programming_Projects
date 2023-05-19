@@ -1,0 +1,149 @@
+.jumbotron {
+    background: url("/media/background.jpg");
+    background-size: cover;
+    height:1000px;
+  }
+
+.blckButton {
+  border: solid rgba(54, 54, 56, 0.5);
+  border-radius: 8px;
+}
+.page_color {
+  background-color: #125246;
+  color: white;
+}
+.pagination > li > a {
+  background-color: white;
+  color: #f7463a;
+}
+/* pagination coloring from Francis */
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  color: #5a5a5a;
+  background-color: #eee;
+  border-color: #ddd;
+}
+
+.pagination > .active > a {
+  color: white;
+  background-color: #5a4181 !important;
+  border: solid 1px #5a4181 !important;
+}
+
+.pagination > .active > a:hover {
+  background-color: #5a4181 !important;
+  border: solid 1px #5a4181;
+}
+.bottomNav {
+  width: 100%;
+  height: 70px;
+  min-height: 70px;
+  /*display: flex;*/
+  justify-content: space-between;
+  align-items: center;
+  /*color: #283833; too hard to see?*/
+  background-color: #3c1100;
+  border-color: #f7463a;
+  border-radius: 8px;
+  margin-top: 5rem;
+
+  color: white;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.img {
+  width: 800px;
+  border-radius: 20px;
+}
+.img {
+  vertical-align: middle;
+  border-style: none;
+}
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+}
+.content {
+  margin-bottom: 60px;
+  width: 750px;
+}
+
+/* from n3 newbie bootstap website */
+/*@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');*/
+
+/*      Media Queries      */
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+}
+
+/*  ---  Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+}
+
+/*  a fixed background image ---*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0 !important;
+}
+/* from Steven Collins TeamTreeHouse.com */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* -- bootstrap padding fix --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+body {
+	background-color: #f5f7fa;
+}
+
+.pink.darken-4 {
+  background-color: #f7463a;
+}
+
+.md-calendar .form-check,
+.card-form .form-check {
+  margin-left: .32rem;
+}
+
+.red-checkbox .form-check-input[type=checkbox]:checked {
+  background-color: #fb0025;
+}
+
+.red-checkbox .form-check-input:checked {
+  border-color: #3c1100;
+}
+
+.red-checkbox .form-check-input:checked:focus:before {
+  box-shadow: 0 0 0 13px #3c1100;
+}
+
+.card-form .card-form-2 {
+  -webkit-border-top-left-radius: 21px;
+  border-top-left-radius: 21px;
+  -webkit-border-top-right-radius: 21px;
+  border-top-right-radius: 21px;
+  margin-top: -35px;
+}
+
+.card-form .card-form-2 .pink-accent-text {
+  color: #c51162;
+}
+head, body{background-color: #3c1100}.card{cursor: pointer}.hd{font-size: 25px;font-weight: 550}.card.hover, .card:hover{box-shadow: 0 20px 40px rgba(0, 0, 0, .2)}.img{margin-bottom: 35px;-webkit-filter: drop-shadow(5px 5px 5px #222);filter: drop-shadow(5px 5px 5px #222)}.card-title{font-weight: 600}button.focus, button:focus{outline: 0;box-shadow: none !important}.ft{margin-top: 25px}.chk{margin-bottom: 5px}.rck{margin-top: 20px;padding-bottom: 15px}

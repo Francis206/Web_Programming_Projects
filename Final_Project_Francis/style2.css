@@ -1,0 +1,83 @@
+
+/* Path: Restaurant app\style.css */
+/* the sticky makes the hear*/
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 0.01px;
+    background-color: #4BBA2F;
+    border-bottom: 0.1px solid green;
+    display: flex;
+    height: 3rem;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+} 
+    }
+  }.background  {
+    background: linear-gradient(.647turn,#58c774,#6dce82 .01%,#82d594 51.04%,#97dcad 99.1%);
+    min-height: 20rem;
+
+
+}.search input{
+    background-color: whitesmoke;
+    text-align: center;
+    cursor: pointer;
+    width: 450px;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 0.5rem;
+    background-color: whitesmoke;
+    transition: 0.5s;
+    display: inline-block;
+}.search button{
+    background-color: whitesmoke;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 80px;
+    height: 55.5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    border-radius: 0.5rem;
+    background-color: red;
+    transition: 0.5s;
+    padding-top: 5px;
+    
+}h1{
+    color: rgb(75, 80, 75);
+    font-family: BrandonText;
+    font-size: 24px;
+    line-height: 28px;  
+    font-size:48px;
+        font-weight: 700;
+        line-height: 56px;
+        padding-top: 50px;
+}.ul1 ul{
+    display:flex;
+    list-style-type: none;
+    background: none;
+    text-align: right;
+    top: 0;
+    margin: 0;
+
+}.ul1 li{
+        display: inline-block;
+        margin: 5px;
+      
+        
+    
+}.ul a{
+   top: 50%;
+}.box{
+    width: 310px;
+    height: 300px;
+    border: 2px solid black;
+    max-width: 800px;
+    }

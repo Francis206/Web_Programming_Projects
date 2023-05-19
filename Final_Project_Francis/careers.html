@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--This is for CS220 Fall Semester coded by Valja Lerdahl with pagination and footer by Francis  Agballog-->
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!--https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+  <script language="javascript" type="text/javascript">
+    // jQuery code to trigger the modal on page load
+    $(document).ready(function () {
+      $('#myModal').modal('show');
+    });
+  </script>
+  <link rel="stylesheet" href="scriptCss.css">
+  <title>Final Course Project CS 220</title>
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    .header {
+      background-color: #b0171f;
+
+    }
+
+    .fields {
+      background: #3c1100;
+
+      padding-top: 40px;
+      padding-bottom: 40px;
+      width: 100%;
+      height: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation bar Added by Valja -->
+  <div class="container-fluid flex w-100 h-100 p-3 ">
+    <div class="header">
+      <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="index.html" class="nav-link" 
+              style="color: white;">Home</a>
+          </li>
+          <li class="nav-item"><a href="menu.html" class="nav-link" style="color: white;">Menu</a></li>
+          <li class="nav-item"><a href="careers.html" class="nav-link active" aria-current="page"style="color: white;">Career</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link" style="color: white;">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link" style="color: white;">Contact</a></li>
+
+        </ul>
+      </header>
+    </div>
+  </div>
+  <!-- Image with Jumbotron added by Valja -->
+  <div class="container">
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-md-6 gap-4 mb-3">
+            <div class="container">
+              <div class="mx-auto my-5" style="max-width: 23rem;">
+                <div class="card card-form mt-2 mb-4">
+                  <div class="card-body rounded-top pink darken-4">
+                    <h3 class="font-weight-bold text-center text-uppercase text-white my-4">Work with Us</h3>
+                    <form class="pb-5 px-2" _lpchecked="1">
+                      <div class="d-flex justify-content-start align-items-center mb-4">
+                        <i class="far fa-user fa-lg text-white fa-fw me-3"></i>
+                        <div class="form-outline form-white w-100">
+                          <input type="text" id="form1Example1" class="form-control" />
+                          <label class="form-label" for="form1Example1">First name</label>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-start align-items-center mb-4">
+                        <i class="far fa-hand-point-right fa-lg text-white fa-fw me-3"></i>
+                        <div class="form-outline form-white w-100">
+                          <input type="text" id="form1Example2" class="form-control" />
+                          <label class="form-label" for="form1Example2">Last name</label>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-start align-items-center mb-4">
+                        <i class="far fa-envelope fa-lg text-white fa-fw me-3"></i>
+                        <div class="form-outline form-white w-100">
+                          <input type="text" id="form1Example3" class="form-control" />
+                          <label class="form-label" for="form1Example3">E-mail</label>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-start align-items-center pb-3">
+                        <i class="far fa-star fa-lg text-white fa-fw me-3"></i>
+                        <div class="form-outline form-white w-100">
+                          <input type="password" id="form1Example4" class="form-control" />
+                          <label class="form-label" for="form1Example4">Password</label>
+                          <div class="form-helper text-white">At least 8 characters and 1 digit</div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="card card-form-2 mb-0 z-depth-0">
+                    <div class="card-body">
+                      <form class="text-center">
+                        <div class="form-check red-checkbox my-3">
+                          <input class="form-check-input ms-auto" type="checkbox" value="" id="flexCheckDefault1"
+                            checked />
+                          <label class="form-check-label" for="flexCheckDefault1">
+                            Subscribe to our newsletter
+                          </label>
+                        </div>
+                        <button class="btn btn-outline-danger btn-rounded btn-block my-4 z-depth-0" type="submit">Sign
+                          up</button>
+                        <p>or sign up with:</p>
+                        <i class="fab fa-lg fa-facebook-f pink-accent-text px-2"></i>
+                        <i class="fab fa-lg fa-twitter pink-accent-text px-2"></i>
+                        <i class="fab fa-lg fa-linkedin-in pink-accent-text px-2"></i>
+                        <i class="fab fa-lg fa-github pink-accent-text px-2"></i>
+                        <hr>
+                        <p>By clicking
+                          <em>Sign up</em> you agree to our
+                          <a class="pink-accent-text" href="#!" target="_blank">terms of service</a> and
+                          <a class="pink-accent-text" href="#!" target="_blank">terms of service</a>.
+                        </p>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Grid column-->
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--Pop-up box HTML-->
+  <div class="popup">
+    <button id="close">&times;</button>
+    <h2>Apply Today! </h2>
+    <p style="text-align: center;">
+      Are You The One? Come And Join Us.
+    </p>
+
+  </div>
+  <!--Alex pagination and refereces 
+  Pager Bootstrap source https://getbootstrap.com/docs/4.0/components/pagination/-->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center ">
+      <li class="page-item disabled">
+        <a class="page-link " href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+      <li class="page-item "><a class="page-link " href="index.html">1</a></li>
+      <li class="page-item page_color"><a class="page-link " href="bio.html">2</a></li>
+      <li class="page-item page_color"><a class="page-link " href="gallery.html">3</a></li>
+      <li class="page-item"><a class="page-link" href="contact.html">4</a></li>
+      <li class="page-item">
+        <a class="page-link" href="bio.html" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!--Script-->
+  <script src="script.js"></script>
+  <!--Alex adjustments to navigation bar and text-->
+  <div class="bottomNav">
+    <h1 class="m-5 copyright small text-center">
+      <div><br>Copyright 2022 © CS220 Fall Semester Alejandro Alonso, Francisco Agballog & Mihjail Britos </div>
+    </h1>
+
+  </div>
+</body>
+
+</html>
